@@ -98,7 +98,7 @@ with torch.no_grad():
     predicted = outputs.argmax(dim=1)
     accuracy = (predicted == test_y).float().mean()
 
-print(f"✅ Final Test Accuracy: {accuracy:.4f}")
+print(f" Final Test Accuracy: {accuracy:.4f}")
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile model.py
